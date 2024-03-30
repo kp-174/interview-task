@@ -1,0 +1,82 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 20px;
+    width: 98%;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add position relative */
+  }
+  
+  .filter-container custom-filter-style {
+    hight: 100%
+  }
+  /* Vertical line */
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20%; /* Adjust this value to position the line */
+    width: 2px; /* Adjust the thickness of the line */
+    background-color: #ccc; /* Customize the line color */
+  }
+  
+  .options-container {
+    display: flex;
+  }
+  
+  .options-left {
+    flex: 1;
+  }
+  
+  .category {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .category-name {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .category-options {
+    margin-left: 400px;
+  }
+  
+  .category-options input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .options-right {
+    margin-left: 100px;
+    background-color: #000000;
+  }
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #f3f3f3;
+  }
+  
+  .filter-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .filter-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filter-button:first-child {
+    margin-left: 0;
+  }
+  

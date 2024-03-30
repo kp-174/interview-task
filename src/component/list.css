@@ -1,0 +1,33 @@
+.option-list {
+  margin-top: 20px;
+  margin-left: 500px; /* Added margin-left */
+ 
+  
+}
+
+.option-list div {
+  margin-bottom: 5px;
+}
+
+.option-list input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.option-list label {
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  top: 10px; /* Adjust the top position to move the button up */
+  right: 600px; /* Adjust the right position as needed */
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.close-btn:hover {
+  background-color: darkred; /* Adjust the background color of the button on hover */
+}
