@@ -1,8 +1,7 @@
 .option-list {
   margin-top: 20px;
-  margin-left: 500px; /* Added margin-left */
- 
-  
+  margin-left: 230px;
+  position: relative;
 }
 
 .option-list div {
@@ -18,16 +17,23 @@
 }
 .close-btn {
   position: absolute;
-  top: 10px; /* Adjust the top position to move the button up */
-  right: 600px; /* Adjust the right position as needed */
   cursor: pointer;
   padding: 5px 10px;
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%;
+  left: 100px;
+  border: 1px solid black;
 }
 
 .close-btn:hover {
-  background-color: darkred; /* Adjust the background color of the button on hover */
+  background-color: #ccc;
+}
+
+.select_box {
+  display: flex;
+}
+input[type="checkbox"] {
+  accent-color: rgb(255, 115, 0);
 }

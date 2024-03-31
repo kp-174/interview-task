@@ -1,34 +1,31 @@
 // OptionList.js
-import React from 'react';
-import './list.css'; // Import the CSS file
+import React from "react";
+import "./list.css";
 
 function OptionList({ options, selectedOption, onSelect, onClose }) {
   const handleOptionClick = (option) => {
-    // Call onSelect to handle the selection logic
     onSelect(option);
-    // Prevent event propagation to parent when clicking on options
-    // This prevents the list from closing when clicking on options
-    return false;
-  };
 
-  const handleCloseButtonClick = (e) => {
-    // Prevent event propagation to parent when clicking on the close button
-    e.stopPropagation();
-    // Call the onClose function to close the list
-    onClose();
+    return false;
   };
   return (
     <div className="option-list">
-     
-      <button className="close-btn" onClick={onClose}>Close</button>
-      <div className="filter-by">Filter By</div>
+      <button className="close-btn" onClick={onClose}>
+        &#10006;
+      </button>
+      <div className="filter-by">FilterBy</div>
       {options.map((option) => (
-        <div key={option} onClick={() => handleOptionClick(option)}>
+        <div
+          key={option}
+          onClick={() => handleOptionClick(option)}
+          className="select_box"
+        >
           <input
             type="checkbox"
             id={`option-${option}`}
             checked={selectedOption === option}
             onChange={() => {}}
+            className="input_box"
           />
           <label htmlFor={`option-${option}`}>{option}</label>
         </div>
